@@ -13,6 +13,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
+import java.nio.charset.StandardCharsets;
+
 /**
  * Represents the teams and known players that the client knows about; one global instance exists on the client.
  * Instances are also created server-side for when changes need to be sync'd to the client; the server side instance
@@ -73,8 +75,17 @@ public class ClientTeamManager {
 	}
 
 	public void initSelfDetails(UUID selfTeamID) {
+		// selfTeam = teamMap.get(selfTeamID);
+		// UUID userId = Minecraft.getInstance().getUser().getGameProfile().getId();
+		// selfKnownPlayer = knownPlayers.get(userId);
+		// if (selfKnownPlayer == null) {
+		// 	FTBTeams.LOGGER.warn("Local player id {} was not found in the known players list [{}]! FTB Teams will not be able to function correctly!",
+		// 			userId, String.join(",", knownPlayers.keySet().stream().map(UUID::toString).toList()));
+		// }
+
 		selfTeam = teamMap.get(selfTeamID);
-		UUID userId = Minecraft.getInstance().getUser().getGameProfile().getId();
+		String username = Minecraft.getInstance().getUser().getName();
+		UUID userId = UUID.nameUUIDFromBytes(("OfflinePlayer:" + username).getBytes(StandardCharsets.UTF_8));
 		selfKnownPlayer = knownPlayers.get(userId);
 		if (selfKnownPlayer == null) {
 			FTBTeams.LOGGER.warn("Local player id {} was not found in the known players list [{}]! FTB Teams will not be able to function correctly!",
