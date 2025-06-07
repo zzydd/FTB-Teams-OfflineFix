@@ -1,5 +1,9 @@
 # FTB-Teams - Fix Offline Mode<br />
-Fixed the GUI interface where some team-related operations could not be accessed when the server was in offline mode with a genuine account.
+Fixed the GUI interface where some team-related operations could not be accessed when the server was in offline mode with a genuine account.<br />
+
+## **Tips**<br />
+You just need to install the repair version mod on the client side<br />
+The server side can use either the original version or the repair version<br />
 
 ## **Fix the error**<br />
 Team data has not been received from the server!<br />
