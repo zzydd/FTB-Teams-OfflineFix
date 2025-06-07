@@ -1,20 +1,20 @@
-# FTB-Teams - Fix Offline Mode<br />
-Fixed the issue where logging into the server with a genuine account when the server was in offline mode prevented the use of some team operation-related GUI.<br />
+# FTB-Teams - 离线模式修复<br />
+修复当服务器处于离线模式时，使用正版账号登录服务器无法使用部分团队操作相关GUI的错误<br />
 
-## **Tips**<br />
-You just need to install the repair version mod on the client side<br />
-The server side can use either the original version or the repair version<br />
+## **提示**<br />
+只需在客户端安装修复版的模组即可<br />
+服务端使用原版或者修复版模组都可以<br />
 
-## **Fix the error**<br />
-Team data has not been received from the server!<br />
-FTB Teams will not function correctly.<br />
-Check server log for errors, and ensure your server is in online mode.<br />
+## **修复错误**<br />
+服务器未接受到队伍数据！<br />
+FTB队伍无法正常运行。<br />
+请检查服务器日志，并确保服务器是在线模式。<br />
 
-## Version support
-- 1.18.2：Fixed and Released
+## 支持的版本
+- 1.18.2：修复 + 发行
 
-## **Before Fix**
-![en_0.png](https://raw.githubusercontent.com/zzydd/FTB-Teams-OfflineFix/refs/heads/IMG/img/en_0.png "en_0.png")<br />
+## **修复前**
+![cn_0.png](https://raw.githubusercontent.com/zzydd/FTB-Teams-OfflineFix/refs/heads/IMG/img/cn_0.png "cn_0.png")<br />
 
-## **Fixed**
-![en_1.png](https://raw.githubusercontent.com/zzydd/FTB-Teams-OfflineFix/refs/heads/IMG/img/en_1.png "en_1.png")<br />
+## **修复后**
+![cn_1.png](https://raw.githubusercontent.com/zzydd/FTB-Teams-OfflineFix/refs/heads/IMG/img/cn_1.png "cn_1.png")<br />
